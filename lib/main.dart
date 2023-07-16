@@ -77,6 +77,11 @@ class _MyHomePageState extends State<MyHomePage> {
             itemCount: languages.length,
             itemBuilder: (BuildContext context, int index) {
               return Card(
+                margin: const EdgeInsets.all(8.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                elevation: 4.0,
                 child: ListTile(
                   splashColor: Theme.of(context).colorScheme.surface,
                   leading: const FlutterLogo(),
@@ -94,6 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               );
             },
+            shrinkWrap: true,
           ),
         ),
       ),
