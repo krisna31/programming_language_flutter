@@ -5,7 +5,7 @@ class ProgrammingLanguage {
   ProgrammingLanguage({required this.name, required this.description});
 }
 
-List<ProgrammingLanguage> languages = [
+List<ProgrammingLanguage> availableLanguages = [
   ProgrammingLanguage(
     name: 'Dart',
     description:
